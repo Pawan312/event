@@ -8,7 +8,7 @@ html, body {
     width: 100%;
 }
 .top {
-    padding: 0.3vw 1vw;
+    height: 3.2vw;
 }
 .top button {
     padding: 0.4vw 1.5vw;
@@ -18,7 +18,15 @@ html, body {
     height: 45vw;
 }
 .navlogo {
-    height: 2.5vw;
+    margin-left: 1vw;
+    width: 9vw;
+    height: 3.1vw;
+    background-color: rgb(69, 228, 243);
+    object-fit: cover;
+
+}
+.navbutton {
+    margin: 0.3vw 1vw;
 }
 .timer-container {
     position: relative;
@@ -32,6 +40,12 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1vw;
+}
+.imageup {
+    font-size: 2vw;
+}
+.imagetext {
+    font-size: 5vw;
 }
 .timerbox{
     background-color: rgba(0, 0, 0, 0.5);
