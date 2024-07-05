@@ -1,0 +1,161 @@
+.timer-container {
+    position: relative;
+    text-align: center;
+    color: rgb(168, 159, 159);
+}
+.timerconnect{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1vw;
+}
+.timerbox{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10%;
+    left: 87%;
+    width: 10vw;
+    height: 35vw;
+
+}
+.timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.maindiv{
+    background: linear-gradient(180deg, #252525 50%, #000000 100%);
+
+}
+
+.maindiv2 {
+    background: linear-gradient(180deg, #000000 70%, #252525 100% );
+
+
+}
+.box1, .box2 {
+    width: 45%;
+    gap: 4vw;
+    border-radius: 3vw;
+    color: #ffffff;
+}
+
+.navbutton{
+    background: linear-gradient(180deg, #00D4F1 0%, #00CFEB 0.01%, #5AEBFF 51%, #00B6CF 100%);
+    
+}
+
+.heading {
+    background: linear-gradient(92.57deg, #00C5D4 50.02%, #000000 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.photo{
+    width: 40vw;
+    height: 40vw;
+}
+.hiddenphoto{
+    display: none;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faq-header {
+    width: 60vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+.faq-content {
+    display: none;
+    padding: 1rem 0;
+}
+.faq-content.show {
+    display: block;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+summary::after {
+    content: '\25BC'; /* Downward arrow */
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+#disclaim{
+    font-size: 2vw;
+}
+.footer h2{
+    font-size: 1.3vw;
+}
+.footer h3{
+    font-size: 1.2vw;
+}
+@media (max-width: 600px) {
+    #main{
+        width: 100vw;
+        overflow: hidden;
+    }
+    .top nav {
+        display: none;
+    }
+    .timerconnect{ 
+        top: 30%;
+        left: 50%;
+    }
+    .timerbox{
+        top: 70%;
+        left: 30%;
+        width: 40vw;
+        height: 10vw;  
+    }
+    .timer-text {
+        width: 40vw;
+    }
+    .mid {
+        flex-direction: column;
+        width: 100%;
+    }
+    .box1, .box2 {
+        width: 100%;
+    }
+    .box1{
+        padding: 3vw 0vw;
+    }
+    .box1 p{
+        padding: 0vw 30vw;
+    }
+
+    .box2 {
+        display: flex;
+        justify-content: center;
+        gap: 1vw;
+        padding-top: 2vw;
+    }
+
+    .photo{
+        display: inline-block;
+        width: 30vw;
+        height: 30vw;
+    }
+    .hiddenphoto{
+        display: inline-block;
+        height: 50vw;
+        height: 30vw;
+        object-fit: cover;
+    }
+}
